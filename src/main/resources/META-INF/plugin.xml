@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.aregev2.discord-intellij</id>
+    <name>Plugin display name here</name>
+    <vendor email="aregev2@gmail.com" url="">YourCompany</vendor>
+
+    <description><![CDATA[
+    A Discord Rich presence plugin for Jetbrains IDEs.<br>
+    Written in Kotlin.
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <group id="DiscordIntelliJ.DiscordMenu" text="Discord" description="The discord rich presence menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="DiscordIntelliJ.TogglePresence" class="TogglePresence" text="Toggle Presence" description="Toggles the presence viability"/>
+        </group>
+    </actions>
+</idea-plugin>
